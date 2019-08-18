@@ -1,0 +1,39 @@
+{
+  "name": "negus",
+  "version": "1.0.0",
+  "description": "Ethiopian restaurant website",
+  "main": "index.js",
+  "scripts": {
+    "css:compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/base.scss negus/static/css/bootstrap/base.css",
+    "css:prefix": "postcss --config build/postcss.config.js --replace \"negus/static/css/bootstrap/*.css\" \"!negus/static/css/bootstrap/*.min.css\"",
+    "css:minify": "cleancss --level 1 --source-map --source-map-inline-sources --output negus/static/css/bootstrap/base.min.css negus/static/css/bootstrap/base.css",
+    "css": "npm-run-all --parallel css:compile* --sequential css:minify*",
+    "watch": "watch 'npm run css' scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antoch03/negus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antoch03/negus/issues"
+  },
+  "homepage": "https://github.com/Antoch03/negus#readme",
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "bootstrap": "^4.0.0-beta.3",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.3"
+  },
+  "devDependencies": {
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-order": "^3.0.1",
+    "stylelint-scss": "^3.9.3",
+    "watch": "^1.0.2"
+  }
+}

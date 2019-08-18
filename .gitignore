@@ -1,8 +1,15 @@
 # Files to ignore 
-negus/db.sqlite3
+negus/db.sqlite3 
+package-lock.json
+negus/static/css/bootstrap/base.css.map
+negus/static/css/bootstrap/base.min.css
+negus/static/css/bootstrap/base.min.css.map
+
 
 # Directories to ignore
+scss/
 negus/__pycache__/ 
 negus/settings/__pycache__/ 
+node_modules/
 
 
