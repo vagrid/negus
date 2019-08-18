@@ -1,0 +1,8 @@
+# Files to ignore 
+negus/db.sqlite3
+
+# Directories to ignore
+negus/__pycache__/ 
+negus/settings/__pycache__/ 
+
+
