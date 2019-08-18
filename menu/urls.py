@@ -1,5 +1,5 @@
 """
-negus URL Configuration
+menu URL Configuration
 The 'urlpatterns' list routes URLs to views. 
 See: https://docs.djangoproject.com/en/2.2/topics/http/urls/
 Examples:
@@ -13,14 +13,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path, include
-from .views import home_page 
+from django.urls import path
+from .views import test_page 
+
+app_name = "menu" 
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", home_page),
-    path("menu", include("menu.urls", namespace = "menu")),
+    path("", test_page),
 ]
 
 
