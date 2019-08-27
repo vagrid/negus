@@ -14,8 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from .views import home_page 
+from django.urls import path, include 
 from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy
 
@@ -24,7 +23,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 ]
 urlpatterns += i18n_patterns(
-    path("", home_page),
+    path(gettext_lazy(""), include("navigation.urls", namespace = "navigation")),
     path(gettext_lazy("menu/"), include("menu.urls", namespace = "menu")),
 )
 

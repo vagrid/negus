@@ -11,5 +11,8 @@ scss/
 negus/__pycache__/ 
 negus/settings/__pycache__/ 
 node_modules/
-
+menu/migrations/ 
+menu/__pycache__/ 
+navigation/__pycache__/ 
+navigation/migrations/
 

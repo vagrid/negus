@@ -1,0 +1,87 @@
+
+{% extends "base.html" %}
+
+{% load static %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% block meta %}
+<title>{% trans "Negus restaurant" %}</title>
+{% endblock %}
+
+{% block content %}
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-6 green">
+               Hello world! 
+            </div>
+            <div class = "col-3 red">
+                Hello world!
+            </div>
+            <div class = "col-3 blue">
+                Hello world!
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm-6 col-12 green">
+               Hello world! 
+            </div>
+            <div class = "col-sm col-12 red">
+                Hello world!
+            </div>
+            <div class = "col-sm col-12 blue">
+                Hello world!
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-4 col-sm-3 col-md-6 green">
+               Hello world! 
+            </div>
+            <div class = "col-4 col-sm-7 col-md-8 red">
+                Hello world!
+            </div>
+            <div class = "col-4 col-sm-2 col-md-6 blue">
+                Hello world!
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-6 green">
+                <div class = "row">
+                    <div class = "col-8 purple">
+                        Hello 
+                    </div>
+                    <div class = "col-4">
+                        Hi
+                    </div>
+                </div> 
+            </div>
+            <div class = "col-3 offset-2 red">
+                Hello world!
+            </div>
+            <div class = "offset-6 col-3 blue">
+                Hello world!
+            </div>
+        </div>
+
+    </div>
+    <div class = "container">
+       Fixed 
+    </div>
+    <div class = "container-fluid" style = "background-color:red;">
+        Fluid
+    </div>
+    <div class = "container">
+        <div class = "jumbotron jumbotron-fluid">
+            
+        </div> 
+    </div>
+    <div class = "jumbotron">
+        <div class = "container">
+            <h1>Hey</h1>
+            <p>Flight...</p> 
+        </div>
+    </div>
+{% endblock %}
+

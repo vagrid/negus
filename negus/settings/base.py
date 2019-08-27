@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "parler",
     'django.contrib.staticfiles',
 
+    "navigation.apps.NavigationConfig",
     "menu.apps.MenuConfig",    
 ]
 
