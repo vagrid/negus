@@ -23,12 +23,12 @@ class Category(models.Model):
     """
     name        = models.CharField(max_length = 200, db_index = True)
     slug        = models.SlugField(max_length = 200, unique = True) 
-    
+    position    = models.PositiveIntegerField(unique = True)
     #
     class Meta:
         """
         """
-        ordering            = ("name",)
+        ordering            = ("position",)
         verbose_name        = "category"
         verbose_name_plural = "categories"
    
