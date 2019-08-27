@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <div class = "container">
+            <h1 class = "text-center">Menu</h1>
+            {% for each_category in categories %}
+                <h2>{{ each_category.name }}</h2>
+                    <div class = "row">
+                        {% for each_dish in dishes %}
+                            <div class = "col-6">
+                                {{ each_dish.name }}
+                                {{ each_dish.description }}
+                                {{ each_dish.price }}
+                            </div>
+                        {% endfor %}
+                    </div>
+            {% endfor %}
+            <a href="#">#</a>
+    </div>
+{% endblock %}
+
