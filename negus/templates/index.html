@@ -1,8 +1,14 @@
 
 {% extends "base.html" %}
 
+{% load static %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
 {% block meta %}
-<title>Negus restaurant</title>
+<title>{% trans "Negus restaurant" %}</title>
 {% endblock %}
 
 {% block content %}

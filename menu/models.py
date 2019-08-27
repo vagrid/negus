@@ -1,5 +1,5 @@
 from django.db import models
-
+from parler.models import TranslatableModel, TranslatedFields
 
 """
 The menu of the negus restaurant consists of dishes that are 
@@ -18,11 +18,13 @@ Two models: Category and Dish
     + price 
 """
 # 
-class Category(models.Model):
+class Category(TranslatableModel):
     """
     """
-    name        = models.CharField(max_length = 200, db_index = True)
-    slug        = models.SlugField(max_length = 200, unique = True) 
+    translations = TranslatedFields(
+        name     = models.CharField(max_length = 200, db_index = True),
+        slug     = models.SlugField(max_length = 200, db_index = True, unique = True) 
+    )
     position    = models.PositiveIntegerField(unique = True)
     #
     class Meta:
@@ -40,21 +42,23 @@ class Category(models.Model):
 
 
 #
-class Dish(models.Model):
+class Dish(TranslatableModel):
     """
     """
-    category    = models.ForeignKey(Category, related_name = "dishes", on_delete = models.CASCADE)
-    name        = models.CharField(max_length = 200, db_index = True)
-    slug        = models.SlugField(max_length = 200, db_index = True) 
-    description = models.TextField(blank = True)
+    translations    = TranslatedFields(
+        name        = models.CharField(max_length = 200, db_index = True),
+        slug        = models.SlugField(max_length = 200, db_index = True), 
+        description = models.TextField(blank = True)
+    )
+    category = models.ForeignKey(Category, related_name = "dishes", on_delete = models.CASCADE)
     price       = models.DecimalField(max_digits = 5, decimal_places = 2)
     
     #
-    class Meta:
-        """
-        """
-        ordering        = ("name", )
-        index_together  = (("id", "slug"),)
+    #class Meta:
+    #    """
+    #    """
+        #ordering        = ("name", )
+        #index_together  = (("id", "slug"),)
     
     #
     def __str__(self):

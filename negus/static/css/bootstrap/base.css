@@ -8061,4 +8061,19 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 
+.linewrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.linewrapper em {
+  color: red;
+}
+
+.middle-dots {
+  border-bottom: 0.2rem dotted #000;
+  flex-grow: 1;
+  margin: 0 5px;
+}
+
 /*# sourceMappingURL=base.css.map */

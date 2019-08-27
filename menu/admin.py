@@ -1,17 +1,25 @@
 from django.contrib import admin
 from .models import Category, Dish 
+from parler.admin import TranslatableAdmin
+
 
 @admin.register(Category)
-class CategoryAdmin(admin.ModelAdmin):
+class CategoryAdmin(TranslatableAdmin):
     """
     """
     list_display        = ["name", "slug"]
-    prepopulated_fields = {"slug":("name",)}
+    
+    #
+    def get_prepopulated_fields(self, request, obj = None):
+        return {"slug":("name",)}
 
 @admin.register(Dish)
-class DishAdmin(admin.ModelAdmin):
+class DishAdmin(TranslatableAdmin):
     """
     """
     list_display        = ["name", "slug", "price"]
-    prepopulated_fields = {"slug": ("name",)} 
+    
+    #
+    def get_prepopulated_fields(self, request, obj = None):
+        return {"slug": ("name",)} 
 

@@ -1,18 +1,33 @@
 
 {% extends "base.html" %}
 
+{% load static %}
+
+{% load i18n %}
+
+{% load l10n %}
+
+{% load tz %}
+
+{% block meta %}
+<title>{% trans "Menu" %} | {% trans "Negus restaurant" %}</title>
+{% endblock %}
+
 {% block content %}
     <div class = "container">
-            <h1 class = "text-center text-uppercase">menu</h1>
+        <h1 class = "text-center text-uppercase my-5">{% trans "menu" %}</h1>
             {% for each_category in categories %}
-                <h2 class = "text-center text-uppercase">{{ each_category.name }}</h2>
+            <h2 class = "text-center text-uppercase my-4">{{ each_category.name }}</h2>
                     <div class = "row">
                         {% for each_dish in dishes %}
                             {% if each_dish.category == each_category %}
-                                <div class = "col-6">
-                                    <h3>{{ each_dish.name }}</h3>
-                                    </p>{{ each_dish.description }}</p>
-                                    <em>{{ each_dish.price }}</em>
+                                <div class = "col-6 my-2 px-5">
+                                    <div class = "linewrapper">
+                                        <h3 class = "text-capitalize">{{ each_dish.name }}</h3>
+                                        <div class = "middle-dots"></div>
+                                        <em>{{ each_dish.price }}</em>
+                                    </div>
+                                    </p>{{ each_dish.description }}</p> 
                                 </div>
                             {% endif %}
                         {% endfor %}

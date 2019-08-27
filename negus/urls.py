@@ -16,12 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import home_page 
+from django.conf.urls.i18n import i18n_patterns
+from django.utils.translation import gettext_lazy
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", home_page),
-    path("menu", include("menu.urls", namespace = "menu")),
 ]
-
-
+urlpatterns += i18n_patterns(
+    path("", home_page),
+    path(gettext_lazy("menu/"), include("menu.urls", namespace = "menu")),
+)
 
