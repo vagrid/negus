@@ -31,7 +31,7 @@
                     <ul class="navbar-nav mx-auto ml-auto">
                         <li class = "nav-item"><a class = "nav-link" href = "{% url 'menu:dish_list' %}">{% trans "Menu" %}<span class="sr-only">(current)</span></a></li>
                         <li class = "nav-item"><a class = "nav-link" href = "{% url 'navigation:about' %}">{% trans "About Us" %}</a></li>
-                        <li class = "nav-item"><a class = "nav-link" href = "#">{% trans "Reservations" %}</a></li>
+                        <li class = "nav-item"><a class = "nav-link" href = "{% url 'reservation:reservation_form' %}">{% trans "Reservations" %}</a></li>
                         <li class = "nav-item"><a class = "nav-link" href = "{% url 'contact:form' %}">{% trans "Contact Us" %}</a></li>
                         <li class = "nav-item"><a class = "nav-link" href = "#">{% trans "Events" %}</a></li>
 

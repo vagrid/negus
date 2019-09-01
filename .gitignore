@@ -14,9 +14,12 @@ menu/__pycache__/
 navigation/__pycache__/ 
 navigation/migrations/
 negus/__pycache__/
+negus/migrations/
 negus/static/
 negus/settings/__pycache__/
 node_modules/
+reservation/__pycache__/ 
+reservation/migrations/
 scss/
 
 

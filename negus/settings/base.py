@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     "navigation.apps.NavigationConfig",
     "menu.apps.MenuConfig",    
     "contact.apps.ContactConfig",
+    "reservation.apps.ReservationConfig",
 ]
 
 MIDDLEWARE = [
