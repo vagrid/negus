@@ -21,20 +21,21 @@
     </head>
     <body>
         <header>
-            <nav class = "navbar justify-content-center navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="{% url 'navigation:home' %}">Navbar</a>
+            <nav class = "navbar fixed-top justify-content-center navbar-expand-lg navbar-primary bg-white">
+                <a class="navbar-brand" href="{% url 'navigation:home' %}">Negus</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto ml-auto">
+                    <ul class="navbar-nav mx-auto karla font-12 font-weight-400">
                         <li class = "nav-item"><a class = "nav-link" href = "{% url 'menu:dish_list' %}">{% trans "Menu" %}<span class="sr-only">(current)</span></a></li>
                         <li class = "nav-item"><a class = "nav-link" href = "{% url 'navigation:about' %}">{% trans "About Us" %}</a></li>
                         <li class = "nav-item"><a class = "nav-link" href = "{% url 'reservation:reservation_form' %}">{% trans "Reservations" %}</a></li>
                         <li class = "nav-item"><a class = "nav-link" href = "{% url 'contact:form' %}">{% trans "Contact Us" %}</a></li>
                         <li class = "nav-item"><a class = "nav-link" href = "#">{% trans "Events" %}</a></li>
-
+                    </ul>
+                    <ul class = "navbar-nav">
                         <li class = "nav-item dropdown"><a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdown" role = "button" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">{% trans "Language"%}</a>
                             <div class = "dropdown-menu" aria-labelledby = "navbarDropdown">
                                 {% get_available_languages as languages %}

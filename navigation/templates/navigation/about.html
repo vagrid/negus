@@ -11,55 +11,70 @@
 <title>{% trans "About us"%} | {% trans "Negus restaurant" %}</title>
 {% endblock %}
 
+{% block css %}
+{% endblock %}
+
 {% block content %}
-<!-- start: section background-about -->
-<section class = "background-about height-500px main-slider position-relative">
-    <div class = "container height-100">
-        <div class = "display-table">
-            <div class = "display-table-cell center-text color-white padding-top-90px">
-                <h4><b>{% trans "Ethiopian restaurant in Paris" %}</b></h4>
-                <h2 class = "margin-top-30px margin-bottom-15px">{% trans "About Negus"%}</h2>
+<main>
+    <article class = "container">
+        <div class = "row text-center karla"> 
+            <div class = "col-12 mt-6 lato">
+                <h1 class = "my-2 font-weight-600 text-success">{% trans "Negus restaurant" %}</h1>
+                <h5 class = "my-4 font-weight-400">{% trans "A corner of Ethiopia in the midst of Paris" %}</h5>    
             </div>
-            <!-- end: display-table-cell -->
-         </div>
-         <!-- end: display-table -->
-    </div>
-    <!-- end: container height-100 -->
-</section>
-<!-- end: section background-about -->
 
-<!-- section story-area -->
-<section class = "story-area text-justify">
-    <div class = "container">
-        <div class = "row"> 
-            <div class = "col-md-6"><img class = "margin-bottom-30px" src = "{% static 'images/000.jpg' %}" alt = ""></div>
-            <div class = "col-md-6"><img class = "margin-bottom-30px" src = "{% static 'images/001.jpg' %}" alt = ""></div> 
-            <div class = "col-md-12 text-center">
-                <h1 class = "my-2">{% trans "Negus restaurant" %}</h1>
-                <h5 class = "my-4">{% trans "A corner of Ethipia in the midst of Paris" %}</h5>    
-            </div>
-            <div class = "col-md-6">
+            <div class = "col-md-6"><img class = "image-resize-80" src = "{% static 'images/0000.jpg' %}" alt = ""></div>
+            <div class = "col-md-6 mb-4"><img class = "image-resize-80" src = "{% static 'images/0004.png' %}" alt = ""></div> 
+                      
+            <section class = "col-md-6 text-justify">
                 <p>
-                {% trans "Negus is a small family-run restaurant which brings a part of Ethipia in the midst of Paris. Specialized in Ethiopian cuisine, our dishes include colorful vegetarian and vegan varieties as well as gluten free options. A selection of wine and traditional Ethipian beers and drinks is also offered to accompany our menus. Historical and cultural courses are provided on Sundays." %}
+                {% trans "The Negus is a small family-run restaurant which brings a part of Ethiopia in the midst of Paris. Specialized in Ethiopian cuisine, our dishes include colorful vegetarian and vegan varieties as well as gluten free options. A selection of wine and traditional Ethipian beers are also offered to accompany our cuisine. Historical and cultural courses are provided on Sundays." %}
                 </p>
-            </div>
-            <!-- col-md-6 -->
-             <div class = "col-md-6">
-                <p class = "margin-bottom-15px">
-                {% trans "More about..." %}
+            </section>
+            <section class = "col-md-6 text-justify">
+                <p>
+                {% trans "" %}
                 </p>
+            </section>
+            <div class = "col-12 mb-4 lato">
+               <h6>
+                   <a href = "{% url 'menu:dish_list' %}" class = "button mr-1 px-2 py-2 text-uppercase text-danger"><b>{% trans "see our menu" %}</b></a>
+                   <a href = "{% url 'reservation:reservation_form' %}" class = "button ml-1 px-2 py-2 text-uppercase text-danger"><b>{% trans "make a reservation" %}</b></a>
+                </h6>                
             </div>
-             <!-- end: col-md-6 -->
         </div>
-        <!-- end: row -->
+    </article>
+    <article class = "container">   
+        <div class = "row text-center karla">
+            <div class = "col-12 mt-2 lato">
+                <h1 class = "my-2 font-weight-600 text-success">{% trans "What do people say about us?" %}</h1>
+            </div> 
+            <section class = "col-12 col-md-3 text-justify">
+                <h4>Excellent first Ethipian food experience</h4>
+                <p>
+                We came upon this cozy restaurant while searching for vegetarian options 
+                and we were certainly not disappointed. The owner was very welcoming and 
+                made the meal a fun experience. There are a variety of meat options but 
+                our vegetarian choices were fabulous. We left with a new found love of Ethiopian food.
+                </p>
+                <p>Florence C, Ottawa (Canada)</p>     
+            </section>
+            <section class = "col-12 col-md-3 text-justify">
+                <h4>Plus qu'un d</h4>
+                <p>Plus qu'un diner au restaurant, venir manger au NEGUS c'est s'offrir le temps d'une soirée un aller-retour pour Addis Abeba ! Un véritable voyage pour les papilles, les oreilles, les yeux et... les mains !
+                J'ai retrouvé l'ambiance de mes repas lors de mon voyage en Ethiopie, l'injera est plus douce au palais que celle que l'on peut manger sur place, mais je ne m'en plaindrais pas...
+                Les garnitures et sauces sont excellentes. Il ne manque plus que le Tej et les azmaris !
+                L'accueil de Sisay est exceptionnel. Si après ça vous n'avez pas envie d'aller découvrir ce merveilleux pays qu'est l'Ethiopie...</p>   
+                <p>Philipe B - Billiere, France</p>
+            </section>
+            <section class = "col-12 col-md-3 text-justify">
+                <h4>Small, homely, intimate taste of Ethiopia in Paris </h4> 
+                <p>Brought the olds here for their first experience of Ethiopian food. Superb injera to share, Ethiopian beer and a great atmosphere. Not too spicy, though I think we got the beginner's version, and you could probably ask for a bit more chilli if required. We had fresh mango and cinnamon for desert, and traditionally served Ethiopian coffee. The venue is a blink-and-you'll-miss-it adapted living room covered in pictures and artefacts from Ethiopia. Highly recommended.i</p>   
+                <p>Natalie, Townsville (Australia) </p>
+            </section>
 
-        <h6 class = "center-text mt-40 mt-sm-30 mb-20">
-            <a href = "#" class ="btn-primaryc plr-25 mb-10 mlr-5"><b>SEE TODAYS MENU</b></a>
-            <a href = "#" class = "btn-primaryc secondary plr-50 mlr-5 mb-10"><b>ORDER NOW</b></a>
-         </h6>
-
-    </div><!-- container -->
-</section>
-
+        </div>
+    </article>
+</main>
 {% endblock %}
 

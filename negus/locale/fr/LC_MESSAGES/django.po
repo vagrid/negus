@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: navigation/urls.py:11 negus/urls.py:26
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 21:14+0000\n"
+"POT-Creation-Date: 2019-09-01 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,28 +18,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: contact/templates/contact/form.html:10
-#, fuzzy
-#| msgid "Contact Us"
-msgid "Contact us"
-msgstr "Contactez nous"
-
-#: contact/templates/contact/form.html:10 menu/templates/menu/dish/list.html:13
-#: navigation/templates/navigation/about.html:11
-#: navigation/templates/navigation/about.html:38
-#: navigation/templates/navigation/index.html:11
-msgid "Negus restaurant"
-msgstr "Restaurant Negus"
-
-#: menu/templates/menu/dish/list.html:13 negus/templates/base.html:56
+#: contact/templates/contact/form.html:13 menu/templates/menu/dish/list.html:8
+#: negus/templates/base.html:32
+#: reservation/templates/reservation/reservation_form.html:13
 msgid "Menu"
 msgstr "Menu"
 
-#: menu/templates/menu/dish/list.html:18
+#: contact/templates/contact/form.html:13 menu/templates/menu/dish/list.html:8
+#: navigation/templates/navigation/about.html:11
+#: navigation/templates/navigation/about.html:26
+#: navigation/templates/navigation/index.html:11
+#: reservation/templates/reservation/reservation_form.html:13
+msgid "Negus restaurant"
+msgstr "Restaurant Negus"
+
+#: contact/templates/contact/form.html:21 negus/templates/base.html:35
+#: reservation/templates/reservation/reservation_form.html:21
+msgid "Contact Us"
+msgstr "Contactez nous"
+
+#: menu/templates/menu/dish/list.html:16
 #, fuzzy
 #| msgid "menu/"
-msgid "menu"
-msgstr "menu/"
+msgid "our menu"
+msgstr "notre menu"
 
 #: navigation/templates/navigation/about.html:11
 #, fuzzy
@@ -48,67 +49,77 @@ msgstr "menu/"
 msgid "About us"
 msgstr "À propos de nous"
 
-#: navigation/templates/navigation/about.html:20
-msgid "Ethiopian restaurant in Paris"
-msgstr ""
+#: navigation/templates/navigation/about.html:27
+msgid "A corner of Ethiopia in the midst of Paris"
+msgstr "Un coin d'Ethiopie au coeur de Paris"
 
-#: navigation/templates/navigation/about.html:21
-#, fuzzy
-#| msgid "About Us"
-msgid "About Negus"
-msgstr "À propos de nous"
-
-#: navigation/templates/navigation/about.html:39
-msgid "A corner of Ethipia in the midst of Paris"
-msgstr ""
-
-#: navigation/templates/navigation/about.html:43
+#: navigation/templates/navigation/about.html:32
 msgid ""
-"Negus is a small family-run restaurant which brings a part of Ethipia in the "
-"midst of Paris. Specialized in Ethiopian cuisine, our dishes include "
+"Negus is a small family-run restaurant which brings a part of Ethiopia in "
+"the midst of Paris. Specialized in Ethiopian cuisine, our dishes include "
 "colorful vegetarian and vegan varieties as well as gluten free options. A "
 "selection of wine and traditional Ethipian beers and drinks is also offered "
 "to accompany our menus. Historical and cultural courses are provided on "
 "Sundays."
 msgstr ""
+"Negus est un petit restaurant familial qui apporte une partie d'Ethiopie au "
+"coeur de Paris. Spécialisé dans la cuisine éthiopienne, nos mets incluent "
+"une variété de plats végétariens et végétaliens, colorées, ainsi que des "
+"options sans gluten. Une sélection de vins, de bières et de boissons "
+"traditionnelles éthiopiennes est également proposée pour accompagner nos "
+"menus. Des cours historiques "
 
-#: navigation/templates/navigation/about.html:49
+#: navigation/templates/navigation/about.html:37
 msgid "More about..."
 msgstr "Plus "
+
+#: navigation/templates/navigation/about.html:42
+#, fuzzy
+#| msgid "menu/"
+msgid "see our menu"
+msgstr "voir notre menu"
+
+#: navigation/templates/navigation/about.html:43
+#, fuzzy
+#| msgid "Reservations"
+msgid "make a reservation"
+msgstr "reservez"
+
+#: navigation/templates/navigation/about.html:56
+msgid "Ethiopian restaurant in Paris"
+msgstr "Restaurant Ethiopien à Paris"
+
+#: navigation/templates/navigation/about.html:57
+#, fuzzy
+#| msgid "About Us"
+msgid "About Negus"
+msgstr "À propos de nous"
 
 #: navigation/urls.py:12
 msgid "about/"
 msgstr "a-propos/"
 
-#: negus/settings/base.py:126
+#: negus/settings/base.py:127
 msgid "English"
 msgstr "Anglais"
 
-#: negus/settings/base.py:127
+#: negus/settings/base.py:128
 msgid "French"
 msgstr "Français"
 
-#: negus/templates/base.html:55
-msgid "Home"
-msgstr "Accueil"
-
-#: negus/templates/base.html:57
+#: negus/templates/base.html:33
 msgid "About Us"
 msgstr "À propos de nous"
 
-#: negus/templates/base.html:58
+#: negus/templates/base.html:34
 msgid "Reservations"
 msgstr "Réservations"
 
-#: negus/templates/base.html:59
-msgid "Contact Us"
-msgstr "Contactez nous"
-
-#: negus/templates/base.html:60
+#: negus/templates/base.html:36
 msgid "Events"
 msgstr "Événements"
 
-#: negus/templates/base.html:62
+#: negus/templates/base.html:39
 msgid "Language"
 msgstr "Langue"
 
@@ -121,3 +132,17 @@ msgstr "menu/"
 #| msgid "Contact Us"
 msgid "contact/"
 msgstr "contactez-nous/"
+
+#: negus/urls.py:29
+#, fuzzy
+#| msgid "Reservations"
+msgid "reservation/"
+msgstr "reservation/"
+
+#, fuzzy
+#~| msgid "Contact Us"
+#~ msgid "Contact us"
+#~ msgstr "Contactez nous"
+
+#~ msgid "Home"
+#~ msgstr "Accueil"

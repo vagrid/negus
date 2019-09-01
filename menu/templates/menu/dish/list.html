@@ -1,21 +1,19 @@
-
 {% extends "base.html" %}
-
 {% load static %}
-
 {% load i18n %}
-
 {% load l10n %}
-
 {% load tz %}
 
 {% block meta %}
 <title>{% trans "Menu" %} | {% trans "Negus restaurant" %}</title>
 {% endblock %}
 
+{% block css %}
+{% endblock %}
+
 {% block content %}
-    <div class = "container">
-        <h1 class = "text-center text-uppercase my-5 text-primary">{% trans "menu" %}</h1>
+    <div class = "container-fluid bg-img-1">
+        <h1 class = "text-center text-uppercase my-5 text-primary">{% trans "our menu" %}</h1>
             {% for each_category in categories %}
             <h2 class = "text-center text-uppercase my-4">{{ each_category.name }}</h2>
                     <div class = "row border border-primary">

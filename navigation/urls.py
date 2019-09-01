@@ -8,7 +8,7 @@ app_name = "navigation"
 
 
 urlpatterns = [
-    path(gettext_lazy(""), HomePageView.as_view(), name = "home"),
+    path("", HomePageView.as_view(), name = "home"),
     path(gettext_lazy("about/"), AboutPageView.as_view(), name ="about"),
 ]
 

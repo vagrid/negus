@@ -23,7 +23,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 ]
 urlpatterns += i18n_patterns(
-    path(gettext_lazy(""), include("navigation.urls", namespace = "navigation")),
+    path("", include("navigation.urls", namespace = "navigation")),
     path(gettext_lazy("menu/"), include("menu.urls", namespace = "menu")),
     path(gettext_lazy("contact/"), include("contact.urls", namespace = "contact")), 
     path(gettext_lazy("reservation/"), include("reservation.urls", namespace = "reservation")),
