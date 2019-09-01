@@ -7,12 +7,16 @@ negus/static/css/bootstrap/base.min.css.map
 
 
 # Directories to ignore
-scss/
-negus/__pycache__/ 
-negus/settings/__pycache__/ 
-node_modules/
-menu/migrations/ 
+contact/__pycache__/
+contact/migrations/
+menu/migrations/
 menu/__pycache__/ 
 navigation/__pycache__/ 
 navigation/migrations/
+negus/__pycache__/
+negus/static/
+negus/settings/__pycache__/
+node_modules/
+scss/
+
 

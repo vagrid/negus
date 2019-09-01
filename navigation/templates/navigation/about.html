@@ -8,80 +8,58 @@
 {% load tz %}
 
 {% block meta %}
-<title>{% trans "Negus restaurant" %}</title>
+<title>{% trans "About us"%} | {% trans "Negus restaurant" %}</title>
 {% endblock %}
 
 {% block content %}
-    <div class = "container">
-        <div class = "row">
-            <div class = "col-6 green">
-               Hello world! 
+<!-- start: section background-about -->
+<section class = "background-about height-500px main-slider position-relative">
+    <div class = "container height-100">
+        <div class = "display-table">
+            <div class = "display-table-cell center-text color-white padding-top-90px">
+                <h4><b>{% trans "Ethiopian restaurant in Paris" %}</b></h4>
+                <h2 class = "margin-top-30px margin-bottom-15px">{% trans "About Negus"%}</h2>
             </div>
-            <div class = "col-3 red">
-                Hello world!
-            </div>
-            <div class = "col-3 blue">
-                Hello world!
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col-sm-6 col-12 green">
-               Hello world! 
-            </div>
-            <div class = "col-sm col-12 red">
-                Hello world!
-            </div>
-            <div class = "col-sm col-12 blue">
-                Hello world!
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col-4 col-sm-3 col-md-6 green">
-               Hello world! 
-            </div>
-            <div class = "col-4 col-sm-7 col-md-8 red">
-                Hello world!
-            </div>
-            <div class = "col-4 col-sm-2 col-md-6 blue">
-                Hello world!
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col-6 green">
-                <div class = "row">
-                    <div class = "col-8 purple">
-                        Hello 
-                    </div>
-                    <div class = "col-4">
-                        Hi
-                    </div>
-                </div> 
-            </div>
-            <div class = "col-3 offset-2 red">
-                Hello world!
-            </div>
-            <div class = "offset-6 col-3 blue">
-                Hello world!
-            </div>
-        </div>
+            <!-- end: display-table-cell -->
+         </div>
+         <!-- end: display-table -->
+    </div>
+    <!-- end: container height-100 -->
+</section>
+<!-- end: section background-about -->
 
-    </div>
+<!-- section story-area -->
+<section class = "story-area text-justify">
     <div class = "container">
-       Fixed 
-    </div>
-    <div class = "container-fluid" style = "background-color:red;">
-        Fluid
-    </div>
-    <div class = "container">
-        <div class = "jumbotron jumbotron-fluid">
-            
-        </div> 
-    </div>
-    <div class = "jumbotron">
-        <div class = "container">
-            <h1>Hey</h1>
-            <p>Flight...</p> 
+        <div class = "row"> 
+            <div class = "col-md-6"><img class = "margin-bottom-30px" src = "{% static 'images/000.jpg' %}" alt = ""></div>
+            <div class = "col-md-6"><img class = "margin-bottom-30px" src = "{% static 'images/001.jpg' %}" alt = ""></div> 
+            <div class = "col-md-12 text-center">
+                <h1 class = "my-2">{% trans "Negus restaurant" %}</h1>
+                <h5 class = "my-4">{% trans "A corner of Ethipia in the midst of Paris" %}</h5>    
+            </div>
+            <div class = "col-md-6">
+                <p>
+                {% trans "Negus is a small family-run restaurant which brings a part of Ethipia in the midst of Paris. Specialized in Ethiopian cuisine, our dishes include colorful vegetarian and vegan varieties as well as gluten free options. A selection of wine and traditional Ethipian beers and drinks is also offered to accompany our menus. Historical and cultural courses are provided on Sundays." %}
+                </p>
+            </div>
+            <!-- col-md-6 -->
+             <div class = "col-md-6">
+                <p class = "margin-bottom-15px">
+                {% trans "More about..." %}
+                </p>
+            </div>
+             <!-- end: col-md-6 -->
         </div>
-    </div>
+        <!-- end: row -->
+
+        <h6 class = "center-text mt-40 mt-sm-30 mb-20">
+            <a href = "#" class ="btn-primaryc plr-25 mb-10 mlr-5"><b>SEE TODAYS MENU</b></a>
+            <a href = "#" class = "btn-primaryc secondary plr-50 mlr-5 mb-10"><b>ORDER NOW</b></a>
+         </h6>
+
+    </div><!-- container -->
+</section>
+
 {% endblock %}
 

@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 
     "navigation.apps.NavigationConfig",
     "menu.apps.MenuConfig",    
+    "contact.apps.ContactConfig",
 ]
 
 MIDDLEWARE = [
@@ -143,4 +144,12 @@ PARLER_LANGUAGES = {
 
 STATIC_URL          = "/static/"
 STATICFILES_DIRS    = (os.path.join(BASE_DIR, "static"),)
+
+
+# Email 
+EMAIL_BACKEND           = "django.core.mail.backends.console.EmailBackend"
+#SERVER_EMAIL            = "contact@django.com"
+DEFAULT_FROM_EMAIL      = "antho.3@hotmail.fr"
+EMAIL_SUBJECT_PREFIX    = "[Startup Organizer" 
+MANAGERS                = (("Us","anthonyrey.simonnot@gmail.com"),)
 

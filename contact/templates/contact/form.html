@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% load l10n %}
+
+{% load tz %}
+
+{% block meta %}
+<title>{% trans "Menu" %} | {% trans "Negus restaurant" %}</title>
+{% endblock %}
+
+{% block content %}
+    <div class = "container">
+        <form action = "{% url 'contact:form' %}" method = "post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type = "submit">{% trans 'Contact Us'%}</button>
+        </form>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,1130 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "menu",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "menu",
+    "model": "categorytranslation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "menu",
+    "model": "dish"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "menu",
+    "model": "dishtranslation"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "namziz8okf8cwkfk4x2c75v45yoqvdz3",
+  "fields": {
+    "session_data": "ODg3YjBlNWMyMThlYWU2N2ZjYjBmYTFjZmVhMDY3NjczZmZkOWUxODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9oYXNoIjoiNTQ2YjJmMTI2YTYxMWYwYWJmYzU3ZDgyYTZjNjkwYWIwNTFjZmNmMyIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+    "expire_date": "2019-09-10T19:29:17.759Z"
+  }
+},
+{
+  "model": "menu.categorytranslation",
+  "pk": 1,
+  "fields": {
+    "language_code": "en",
+    "name": "starters",
+    "slug": "starters",
+    "master": 1
+  }
+},
+{
+  "model": "menu.categorytranslation",
+  "pk": 2,
+  "fields": {
+    "language_code": "fr",
+    "name": "entr\u00e9es",
+    "slug": "entrees",
+    "master": 1
+  }
+},
+{
+  "model": "menu.categorytranslation",
+  "pk": 3,
+  "fields": {
+    "language_code": "en",
+    "name": "main courses",
+    "slug": "main-courses",
+    "master": 2
+  }
+},
+{
+  "model": "menu.categorytranslation",
+  "pk": 4,
+  "fields": {
+    "language_code": "fr",
+    "name": "plats",
+    "slug": "plats",
+    "master": 2
+  }
+},
+{
+  "model": "menu.categorytranslation",
+  "pk": 5,
+  "fields": {
+    "language_code": "en",
+    "name": "desserts",
+    "slug": "desserts",
+    "master": 3
+  }
+},
+{
+  "model": "menu.categorytranslation",
+  "pk": 6,
+  "fields": {
+    "language_code": "fr",
+    "name": "desserts",
+    "slug": "dessert",
+    "master": 3
+  }
+},
+{
+  "model": "menu.categorytranslation",
+  "pk": 7,
+  "fields": {
+    "language_code": "en",
+    "name": "drinks",
+    "slug": "drinks",
+    "master": 4
+  }
+},
+{
+  "model": "menu.categorytranslation",
+  "pk": 8,
+  "fields": {
+    "language_code": "fr",
+    "name": "boissons",
+    "slug": "boissons",
+    "master": 4
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 1,
+  "fields": {
+    "position": 1
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 2,
+  "fields": {
+    "position": 2
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 3,
+  "fields": {
+    "position": 3
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 4,
+  "fields": {
+    "position": 4
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 1,
+  "fields": {
+    "language_code": "en",
+    "name": "messer afiza",
+    "slug": "messer-afiza",
+    "description": "Lentil salad accented with green peppers, onions and seasoned with lemon and olive oil dressing.",
+    "master": 1
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 2,
+  "fields": {
+    "language_code": "fr",
+    "name": "messer afiza",
+    "slug": "messer-afiza",
+    "description": "Salade de lentilles, poivrons verts et oignons, assaisonn\u00e9e d\u2019une vinaigrette \u00e0 l\u2019huile d\u2019olive et au citron.",
+    "master": 1
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 3,
+  "fields": {
+    "language_code": "en",
+    "name": "bouticha",
+    "slug": "bouticha",
+    "description": "Chick pea flour prepared into a pur\u00e9e, mixed with fresh green peppers, onions and seasoned with lemon and olive oil dressing.",
+    "master": 2
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 4,
+  "fields": {
+    "language_code": "fr",
+    "name": "bouticha",
+    "slug": "bouticha",
+    "description": "Pur\u00e9e de pois chiches, poivrons verts et oignons, assaisonn\u00e9e d\u2019une vinaigrette\r\n\u00e0 l\u2019huile d\u2019olive et au citron.",
+    "master": 2
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 5,
+  "fields": {
+    "language_code": "fr",
+    "name": "salade yetimatim",
+    "slug": "salade-yetimatim",
+    "description": "Salade de tomates, poivrons verts et oignons, assaisonn\u00e9e d\u2019une vinaigrette \u00e0 l\u2019huile d\u2019olive et au citron.",
+    "master": 3
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 6,
+  "fields": {
+    "language_code": "en",
+    "name": "yetimatim salad",
+    "slug": "yetimatim-salad",
+    "description": "Chopped tomatoes, onions, green peppers seasoned with lemon and olive oil dressing.",
+    "master": 3
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 7,
+  "fields": {
+    "language_code": "en",
+    "name": "yekik alicha",
+    "slug": "yekik-alicha",
+    "description": "Yellow split peas cooked with turmeric (ird), fresh ginger root (gingible) and onions.",
+    "master": 4
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 8,
+  "fields": {
+    "language_code": "fr",
+    "name": "yekik alicha",
+    "slug": "yekik-alicha",
+    "description": "Pois cass\u00e9s cuits avec curcuma (ird), gingembre frais (gingible) et oignons.",
+    "master": 4
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 9,
+  "fields": {
+    "language_code": "en",
+    "name": "gommen",
+    "slug": "gommen",
+    "description": "Spinach saut\u00e9ed with onions, garlic and fresh green peppers.",
+    "master": 5
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 10,
+  "fields": {
+    "language_code": "fr",
+    "name": "gommen",
+    "slug": "gommen",
+    "description": "\u00c9pinards saut\u00e9s avec oignons, ail et poivrons verts.",
+    "master": 5
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 11,
+  "fields": {
+    "language_code": "en",
+    "name": "fuit salad",
+    "slug": "fuit-salad",
+    "description": "Fruit.",
+    "master": 6
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 12,
+  "fields": {
+    "language_code": "fr",
+    "name": "salade de fruits",
+    "slug": "salade-de-fruits",
+    "description": "Fruits.",
+    "master": 6
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 13,
+  "fields": {
+    "language_code": "en",
+    "name": "banana beer",
+    "slug": "banana-beer",
+    "description": "",
+    "master": 7
+  }
+},
+{
+  "model": "menu.dishtranslation",
+  "pk": 14,
+  "fields": {
+    "language_code": "fr",
+    "name": "bi\u00e8re \u00e0 la banane",
+    "slug": "biere-la-banane",
+    "description": "",
+    "master": 7
+  }
+},
+{
+  "model": "menu.dish",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "price": "7.95"
+  }
+},
+{
+  "model": "menu.dish",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "price": "7.95"
+  }
+},
+{
+  "model": "menu.dish",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "price": "7.95"
+  }
+},
+{
+  "model": "menu.dish",
+  "pk": 4,
+  "fields": {
+    "category": 2,
+    "price": "15.95"
+  }
+},
+{
+  "model": "menu.dish",
+  "pk": 5,
+  "fields": {
+    "category": 2,
+    "price": "15.95"
+  }
+},
+{
+  "model": "menu.dish",
+  "pk": 6,
+  "fields": {
+    "category": 3,
+    "price": "2.99"
+  }
+},
+{
+  "model": "menu.dish",
+  "pk": 7,
+  "fields": {
+    "category": 4,
+    "price": "6.00"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 2,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 2,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 2,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 2,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 7,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 7,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 7,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 7,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add dish",
+    "content_type": 9,
+    "codename": "add_dish"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change dish",
+    "content_type": 9,
+    "codename": "change_dish"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete dish",
+    "content_type": 9,
+    "codename": "delete_dish"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view dish",
+    "content_type": 9,
+    "codename": "view_dish"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$99lip6ZYbzN2$xtTgo7/+PMYMDrqnX1uZBLHeHbTeVPDR172sbVpVmX8=",
+    "last_login": "2019-08-27T19:29:17.661Z",
+    "is_superuser": true,
+    "username": "anthony",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-08-27T19:29:05.665Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2019-08-27T19:29:28.243Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "starters",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2019-08-27T19:30:20.740Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "entr\u00e9e",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"slug\", \"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2019-08-27T19:30:24.357Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "entr\u00e9e",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2019-08-27T19:30:34.209Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "starters",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2019-08-27T19:32:08.147Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "messer afiza",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2019-08-27T19:32:34.817Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "messer afiza",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"slug\", \"description\", \"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2019-08-27T19:34:37.399Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "entr\u00e9es",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"slug\", \"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2019-08-27T19:35:03.758Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "main courses",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2019-08-27T19:35:32.488Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "plats",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"slug\", \"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2019-08-27T19:35:38.725Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "plats",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2019-08-27T19:36:43.043Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "desserts",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2019-08-27T19:38:20.266Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "desserts",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"slug\", \"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2019-08-27T19:38:35.854Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "drinks",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2019-08-27T19:38:56.547Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "boissons",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"slug\", \"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2019-08-27T19:39:44.027Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "bouticha",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2019-08-27T19:40:20.480Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "bouticha",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"slug\", \"description\", \"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2019-08-27T19:40:25.495Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "bouticha",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2019-08-27T19:40:29.533Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "messer afiza",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2019-08-27T19:40:50.439Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "messer afiza",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2019-08-27T19:42:10.330Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "salade yetimatim",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2019-08-27T19:43:01.293Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "yetimatim salad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"slug\", \"description\", \"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2019-08-27T19:43:44.521Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "yekik alicha",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2019-08-27T19:44:19.204Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "yekik alicha",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"slug\", \"description\", \"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2019-08-27T19:44:20.962Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "yekik alicha",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2019-08-27T19:44:24.799Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "yekik alicha",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2019-08-27T20:18:04.353Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "gommen",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2019-08-27T20:18:25.769Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "gommen",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"name\", \"slug\", \"description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2019-08-27T20:19:31.429Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "fuit salad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2019-08-27T20:19:44.048Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "salade de fruits",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"name\", \"slug\", \"description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2019-08-27T20:19:48.343Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "fuit salad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2019-08-27T20:21:21.506Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "banana beer",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2019-08-27T20:21:43.032Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "bi\u00e8re \u00e0 la banane",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"name\", \"slug\"]}}]"
+  }
+}
+]
