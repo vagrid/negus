@@ -16,27 +16,37 @@
 
 {% block content %}
 <main>
-    <article class = "container">
+    <article class = "container height-100">
         <div class = "row text-center karla"> 
             <div class = "col-12 mt-6 lato">
                 <h1 class = "my-2 font-weight-600 text-success">{% trans "Negus restaurant" %}</h1>
                 <h5 class = "my-4 font-weight-400">{% trans "A corner of Ethiopia in the midst of Paris" %}</h5>    
             </div>
-
-            <div class = "col-md-6"><img class = "image-resize-80" src = "{% static 'images/0000.jpg' %}" alt = ""></div>
-            <div class = "col-md-6 mb-4"><img class = "image-resize-80" src = "{% static 'images/0004.png' %}" alt = ""></div> 
-                      
-            <section class = "col-md-6 text-justify">
-                <p>
-                {% trans "The Negus is a small family-run restaurant which brings a part of Ethiopia in the midst of Paris. Specialized in Ethiopian cuisine, our dishes include colorful vegetarian and vegan varieties as well as gluten free options. A selection of wine and traditional Ethipian beers are also offered to accompany our cuisine. Historical and cultural courses are provided on Sundays." %}
-                </p>
-            </section>
-            <section class = "col-md-6 text-justify">
-                <p>
-                {% trans "" %}
-                </p>
-            </section>
-            <div class = "col-12 mb-4 lato">
+            <div class = "col-md-6">
+                <div = "wrapper">
+                    <div class = "circle circle-left">
+                        <img class = "image-resize-80" src = "{% static 'images/000000.jpg' %}" alt = "">
+                    </div>
+                    <section class = "text-justify">
+                        <p>
+                        {% trans "The Negus is a small family-run restaurant which brings a part of Ethiopia in the midst of Paris. Specialized in Ethiopian cuisine, our dishes include colorful vegetarian and vegan varieties as well as gluten free options. A selection of wine and traditional Ethipian beers are also offered to accompany our cuisine. Historical and cultural courses are provided on Sundays." %}
+                        </p>
+                     </section>
+                </div>
+            </div>
+            <div class = "col-md-6 mb-4">
+                <div class = "wrapper">
+                    <div class = "circle circle-right">
+                        <img class = "image-resize-80" src = "{% static 'images/0005.jpg' %}" alt = "">                      
+                    </div>
+                    <section class = "text-justify">
+                        <p>
+                        {% trans "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi." %}
+                        </p>
+                    </section>        
+                </div>
+            </div>
+            <div class = "col-12 mt-5 lato">
                <h6>
                    <a href = "{% url 'menu:dish_list' %}" class = "button mr-1 px-2 py-2 text-uppercase text-danger"><b>{% trans "see our menu" %}</b></a>
                    <a href = "{% url 'reservation:reservation_form' %}" class = "button ml-1 px-2 py-2 text-uppercase text-danger"><b>{% trans "make a reservation" %}</b></a>
@@ -72,8 +82,9 @@
                 <p>Brought the olds here for their first experience of Ethiopian food. Superb injera to share, Ethiopian beer and a great atmosphere. Not too spicy, though I think we got the beginner's version, and you could probably ask for a bit more chilli if required. We had fresh mango and cinnamon for desert, and traditionally served Ethiopian coffee. The venue is a blink-and-you'll-miss-it adapted living room covered in pictures and artefacts from Ethiopia. Highly recommended.i</p>   
                 <p>Natalie, Townsville (Australia) </p>
             </section>
-
-        </div>
+            <a href="https://auroreinparis.com/2012/07/16/jai-teste-un-restaurant-ethiopien-le-negus/">Blog about the negus...</a>
+             <a href="https://lesdelicesdevanessa.com/2009/12/20/le-negus-le-restaurant-ethiopien/">Blog about the negus...</a>
+                   </div>
     </article>
 </main>
 {% endblock %}
