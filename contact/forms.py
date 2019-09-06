@@ -4,9 +4,9 @@ from django import forms
 class ContactForm(forms.Form):
     """
     """
-    full_name   = forms.CharField()
-    email       = forms.EmailField(initial = "antho.4@hotmail.fr")
-    message     = forms.CharField(widget = forms.Textarea)
+    full_name   = forms.CharField(widget = forms.TextInput(attrs = {"placeholder":"Full name"}))
+    email       = forms.EmailField(widget = forms.TextInput(attrs = {"placeholder":"Email"}))
+    message     = forms.CharField(widget = forms.Textarea(attrs = {"placeholder":"Message"}))
     
     # custom validation 
     def clean_email(self, *args, **kwargs):

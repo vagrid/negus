@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    
+
+    "crispy_forms",
     "livesync",
     "parler",
     'django.contrib.staticfiles',
@@ -54,6 +55,7 @@ INSTALLED_APPS = [
     "menu.apps.MenuConfig",    
     "contact.apps.ContactConfig",
     "reservation.apps.ReservationConfig",
+
 ]
 
 MIDDLEWARE = [
@@ -154,3 +156,6 @@ DEFAULT_FROM_EMAIL      = "antho.3@hotmail.fr"
 EMAIL_SUBJECT_PREFIX    = "[Startup Organizer" 
 MANAGERS                = (("Us","anthonyrey.simonnot@gmail.com"),)
 
+
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"

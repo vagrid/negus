@@ -1,8 +1,5 @@
-
 {% extends "base.html" %}
-
 {% load static %}
-
 {% load i18n %}
 {% load l10n %}
 {% load tz %}
@@ -16,75 +13,97 @@
 
 {% block content %}
 <main>
-    <article class = "container height-100">
-        <div class = "row text-center karla"> 
-            <div class = "col-12 mt-6 lato">
-                <h1 class = "my-2 font-weight-600 text-success">{% trans "Negus restaurant" %}</h1>
-                <h5 class = "my-4 font-weight-400">{% trans "A corner of Ethiopia in the midst of Paris" %}</h5>    
+    <article class = "container-fluid vh-min-100">
+        <div class = "row equal text-center font-paragraph font-12 line-height-10"> 
+            <div class = "col-12 mt-6 mb-3 font-heading">
+                <h1 class = "mb-2 font-30 font-weight-600 text-success text-inline">{% trans "Negus restaurant" %}</h1>
+                <h4 class = "my-4 font-weight-400">{% trans "A corner of Ethiopia in the midst of Paris" %}</h4>    
             </div>
-            <div class = "col-md-6">
-                <div = "wrapper">
+            <div class = "col-md-6 px-5">
+                <div = "wrapper height-100">
                     <div class = "circle circle-left">
                         <img class = "image-resize-80" src = "{% static 'images/000000.jpg' %}" alt = "">
                     </div>
                     <section class = "text-justify">
                         <p>
-                        {% trans "The Negus is a small family-run restaurant which brings a part of Ethiopia in the midst of Paris. Specialized in Ethiopian cuisine, our dishes include colorful vegetarian and vegan varieties as well as gluten free options. A selection of wine and traditional Ethipian beers are also offered to accompany our cuisine. Historical and cultural courses are provided on Sundays." %}
+                        {% trans "The Negus is a small family-run restaurant which brings a part of Ethiopia in the midst of Paris. The Ethiopian cuisine is a delight for everyone - particularly through colorful vegetarian and vegan dishes. Gluten intolerance will no longer be a problem with our 100% teff injeras. A selection of wine and traditional Ethipian beers can also be served to accompany our food." %}
                         </p>
                      </section>
                 </div>
             </div>
-            <div class = "col-md-6 mb-4">
-                <div class = "wrapper">
+            <div class = "col-md-6 mb-5 px-5 border-left border-danger">
+                <div class = "wrapper height-100">
                     <div class = "circle circle-right">
                         <img class = "image-resize-80" src = "{% static 'images/0005.jpg' %}" alt = "">                      
                     </div>
                     <section class = "text-justify">
                         <p>
-                        {% trans "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi." %}
+                        {% trans "We're Sisay and Sitina. Both of us were born in Ethiopia, but we met 29 years ago in Paris. Together we built this restaurant that we love to call our home. We have tried our best to make people discover a bit of our country of orign. It does not end with the food, as we provide historical and cultural lectures on Sundays." %}<br>{% trans "There is only one thing left... Come treat yourself!" %}
                         </p>
                     </section>        
                 </div>
             </div>
-            <div class = "col-12 mt-5 lato">
-               <h6>
-                   <a href = "{% url 'menu:dish_list' %}" class = "button mr-1 px-2 py-2 text-uppercase text-danger"><b>{% trans "see our menu" %}</b></a>
-                   <a href = "{% url 'reservation:reservation_form' %}" class = "button ml-1 px-2 py-2 text-uppercase text-danger"><b>{% trans "make a reservation" %}</b></a>
-                </h6>                
+            <div class = "offset-3 col-3 font-paragraph">
+                <h6>
+                   <a href = "{% url 'menu:dish_list' %}" class = "button px-2 py-2 text-uppercase"><b>{% trans "see our menu" %}</b></a></h6> 
+            </div>
+            <div class = "col-3 font-paragraph">
+                <h6>
+                   <a href = "{% url 'reservation:reservation_form' %}" class = "button px-2 py-2 text-uppercase"><b>{% trans "make a reservation" %}</b></a> 
             </div>
         </div>
     </article>
-    <article class = "container">   
-        <div class = "row text-center karla">
+    <article class = "container-fluid vh-min-100">  
+        <div class = "row text-center">
+		<!--
+            <div class = "flag">
+                 <div class = "col-12 mt-2 lato">
+                    <h3 class = "my-2 font-weight-600 text-primary">{% trans "What do people say about us?" %}</h3>
+                </div> 
+                 <div class = "first-color">
+                     
+                 </div> 
+                 <div class = "second-color">
+                     <img src = "{% static 'images/1000.svg' %}" alt="" />
+                 </div>
+                 <div  class = "third-color">
+                     
+                 </div>
+            </div>    
+        </div>
+ -->
+        <!--
+        <div class = "row mx-auto text-center karla">
             <div class = "col-12 mt-2 lato">
-                <h1 class = "my-2 font-weight-600 text-success">{% trans "What do people say about us?" %}</h1>
+                <h3 class = "my-2 font-weight-600 text-success">{% trans "What do people say about us?" %}</h3>
             </div> 
-            <section class = "col-12 col-md-3 text-justify">
-                <h4>Excellent first Ethipian food experience</h4>
+            <section class = "col-12 col-md-4 text-justify">
+                <h4 class = "text-center">Excellent first Ethipian food experience</h4>
                 <p>
                 We came upon this cozy restaurant while searching for vegetarian options 
                 and we were certainly not disappointed. The owner was very welcoming and 
                 made the meal a fun experience. There are a variety of meat options but 
                 our vegetarian choices were fabulous. We left with a new found love of Ethiopian food.
                 </p>
-                <p>Florence C, Ottawa (Canada)</p>     
+                <p class = "text-center">Florence C.<br> Ottawa (Canada)</p>     
             </section>
-            <section class = "col-12 col-md-3 text-justify">
-                <h4>Plus qu'un d</h4>
+            <section class = "col-12 col-md-4 text-justify">
+                <h4 class = "text-center">Plus qu'un diner au restaurant</h4>
                 <p>Plus qu'un diner au restaurant, venir manger au NEGUS c'est s'offrir le temps d'une soirée un aller-retour pour Addis Abeba ! Un véritable voyage pour les papilles, les oreilles, les yeux et... les mains !
                 J'ai retrouvé l'ambiance de mes repas lors de mon voyage en Ethiopie, l'injera est plus douce au palais que celle que l'on peut manger sur place, mais je ne m'en plaindrais pas...
                 Les garnitures et sauces sont excellentes. Il ne manque plus que le Tej et les azmaris !
                 L'accueil de Sisay est exceptionnel. Si après ça vous n'avez pas envie d'aller découvrir ce merveilleux pays qu'est l'Ethiopie...</p>   
-                <p>Philipe B - Billiere, France</p>
+                <p class = "text-center">Philipe B.<br>Billiere (France)</p>
             </section>
-            <section class = "col-12 col-md-3 text-justify">
+            <section class = "col-12 col-md-4 text-center">
                 <h4>Small, homely, intimate taste of Ethiopia in Paris </h4> 
-                <p>Brought the olds here for their first experience of Ethiopian food. Superb injera to share, Ethiopian beer and a great atmosphere. Not too spicy, though I think we got the beginner's version, and you could probably ask for a bit more chilli if required. We had fresh mango and cinnamon for desert, and traditionally served Ethiopian coffee. The venue is a blink-and-you'll-miss-it adapted living room covered in pictures and artefacts from Ethiopia. Highly recommended.i</p>   
-                <p>Natalie, Townsville (Australia) </p>
+                <p class = "text-justify">Brought the olds here for their first experience of Ethiopian food. Superb injera to share, Ethiopian beer and a great atmosphere. Not too spicy, though I think we got the beginner's version, and you could probably ask for a bit more chilli if required. We had fresh mango and cinnamon for desert, and traditionally served Ethiopian coffee. The venue is a blink-and-you'll-miss-it adapted living room covered in pictures and artefacts from Ethiopia. Highly recommended.i</p>   
+                <p>Natalie<br>Townsville (Australia) </p>
             </section>
             <a href="https://auroreinparis.com/2012/07/16/jai-teste-un-restaurant-ethiopien-le-negus/">Blog about the negus...</a>
              <a href="https://lesdelicesdevanessa.com/2009/12/20/le-negus-le-restaurant-ethiopien/">Blog about the negus...</a>
                    </div>
+                -->
     </article>
 </main>
 {% endblock %}

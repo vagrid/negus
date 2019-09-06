@@ -1773,7 +1773,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .form-text {
@@ -8478,6 +8478,18 @@ a.text-dark:focus, a.text-dark:hover {
   src: url("../../fonts/roboto/roboto-regular.ttf");
 }
 
+@font-face {
+  font-family: "dancing-script";
+  src: url("../../fonts/dancing-script/dancing-script-bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "josefin-sans";
+  src: url("../../fonts/josefin-sans/josefin-sans-light.ttf");
+  font-weight: lighter;
+}
+
 .linewrapper {
   display: flex;
   align-items: baseline;
@@ -8514,6 +8526,20 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 /* font-family */
+.font-heading {
+  font-family: "dancing-script";
+  font-weight: bold;
+}
+
+.font-paragraph {
+  font-family: "josefin-sans";
+  font-weight: lighter;
+}
+
+.line-height-10 {
+  line-height: 1.8rem;
+}
+
 .karla {
   font-family: "karla";
 }
@@ -8524,83 +8550,83 @@ a.text-dark:focus, a.text-dark:hover {
 
 /* font-size */
 .font-05 {
-  font-size: .5em;
+  font-size: .5rem;
 }
 
 .font-06 {
-  font-size: .6em;
+  font-size: .6rem;
 }
 
 .font-07 {
-  font-size: .7em;
+  font-size: .7rem;
 }
 
 .font-75 {
-  font-size: .75em;
+  font-size: .75rem;
 }
 
 .font-08 {
-  font-size: .8em;
+  font-size: .8rem;
 }
 
 .font-85 {
-  font-size: .85em;
+  font-size: .85rem;
 }
 
 .font-09 {
-  font-size: .9em;
+  font-size: .9rem;
 }
 
 .font-11 {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .font-12 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .font-13 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 .font-14 {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 .font-15 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .font-16 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .font-17 {
-  font-size: 1.7em;
+  font-size: 1.7rem;
 }
 
 .font-18 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .font-20 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .font-23 {
-  font-size: 2.3em;
+  font-size: 2.3rem;
 }
 
 .font-25 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 .font-30 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .font-40 {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 /* font */
@@ -8649,6 +8675,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 */
 .button {
+  color: #da1219;
   border: 1px solid #da1219;
 }
 
@@ -8656,6 +8683,7 @@ a.text-dark:focus, a.text-dark:hover {
   background-color: #da1219;
   text-decoration: none;
   color: #fff;
+  border: 1px solid #d61219;
 }
 
 .wrapper {
@@ -8688,8 +8716,8 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .circle.circle-right {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   float: right;
   border: 0.25rem solid #fcdc09;
   border-radius: 50%;
@@ -8698,7 +8726,135 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .height-100 {
+  height: 100%;
+}
+
+.navbar {
+  border-bottom: 1px solid #0f47af;
+}
+
+.text-inline {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.text-inline:before {
+  content: "";
+  border-top: 0.2rem solid #078930;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+.text-inline:after {
+  content: "";
+  border-top: 0.2rem solid #078930;
+  margin: 0 20px 0 20px;
+  flex: 1 0 20px;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.background-red {
+  background-color: red;
+}
+
+.background-green {
+  background-color: green;
+}
+
+.background-gray {
+  background-color: gray;
+}
+
+.background-blue {
+  background-color: blue;
+}
+
+.background-yellow {
+  background-color: yellow;
+}
+
+.background-orange {
+  background-color: orange;
+}
+
+.min-h-02 {
+  min-height: 2rem;
+}
+
+.vh-min-100 {
+  min-height: 100vh;
+}
+
+.vh-max-100 {
+  max-height: 80vh;
+}
+
+.h-max-100 {
+  max-height: auto;
+}
+
+.equal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.equal > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.border-left {
+  border-left: 2px solid;
+}
+
+.border-right {
+  border-right: 2px solid;
+}
+
+.flag {
+  position: relative;
+  width: 100%;
   height: 100vh;
+}
+
+.flag .first-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 33vh;
+  background-color: #078930;
+  z-index: -1;
+}
+
+.flag .second-color {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 35vh;
+  transform: translate(-50%, -50%);
+  background: #fcdc09;
+  z-index: -2;
+}
+
+.flag .third-color {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 33vh;
+  background-color: #da1219;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=base.css.map */
