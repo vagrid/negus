@@ -15,6 +15,7 @@
         <!-- meta tags --> 
         <!-- css -->
         <link rel = "stylesheet" title = "base css file" type = "text/css" href = "{% static 'css/bootstrap/base.css'%}"/>
+        <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.8/css/all.css">
         {% block css %}
         {% endblock %}
         <!-- css -->
@@ -51,10 +52,52 @@
         </header>
         {% block content %}
         {% endblock %}
-        <footer>
-        </footer>
-        <!-- js -->
         
+        <footer>
+            <div class = "container-fluid text-center text-light background-dark">
+                <div class = "row mx-auto pt-4">
+                    <div class = "col-md-4 px-4">
+                        <h4 class = "mb-3 font-heading text-capitalize text-success text-between-line-success">{% trans "negus restaurant" %}</h4>
+                        <p class = "font-paragraph">{% trans "Come treat yourself with some delicious Ehiopian cusine" %}</p>
+                        <button type = "button">{% trans "make a reservation" %}</button>
+                        <p class = "font-paragraph">{% trans "or check us out" %}</p>
+                        <ul class = "list-unstyled list-inline">
+                            <li class = "list-inline-item"><a href = "https://www.facebook.com/pages/category/Ethiopian-Restaurant/Restaurant-%C3%A9thiopien-Le-Negus-330618804391/"><i class = "fab fa-facebook-f"></i></a></li>
+                            <li class = "list-inline-item"><a href = "https://www.tripadvisor.com/Restaurant_Review-g187147-d3726831-Reviews-Le_Negus-Paris_Ile_de_France.html"><i class = "fab fa-tripadvisor"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class = "col-md-4 px-4 font-paragraph">
+                        <h4 class = "mb-3 font-heading text-capitalize text-warning text-between-line-warning">{% trans "opening hours" %}</h4>
+                        <ul class = "pl-0 list-unstyled">
+                            <li class = "text-capitalize">{% trans "monday - friday" %}</li>
+                            <ul class = "pl-0 list-unstyled">                                
+                                <li>12 am - 2 pm</li> 
+                                <li>07 pm - 12am</li>
+                            </ul>
+                            <li class = "text-capitalize">{% trans "saturday - sunday" %}</li>
+                            <ul class = "pl-0 list-unstyled">
+                                <li>12 am - 2 pm</li> 
+                                <li>07 pm - 12am</li> 
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class = "col-md-4 px-4">
+                        <h4 class = "font-heading text-capitalize text-danger text-between-line-danger">{% trans "contact us" %}</h4>
+                        <p></p>
+                        <h5 class = "font-heading text-capitalize">{% trans "address" %}</h5>
+                        <p class = "font-paragraph">52 rue de Montreuil,<br>75011 Paris, France</p>
+                        <h5 class = "font-heading text-capitalize">{% trans "phone number" %}</h5> 
+                        <p class = "font-paragraph">01 43 48 91 52</p>
+                    </div>
+                    <div class = "col-12 font-paragraph">
+                        <h3 class = "width-40 mx-auto pt-3 font-11 border-top border-primary">{% trans "negus restaurant" %} &copy; 2019</h3>
+                        <h2 class = "font-09 pb-1 text-uppercase">{% trans "designed and developed by" %}<br><a class = "text-primary" href = "#">anthony rey</a></h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- js -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

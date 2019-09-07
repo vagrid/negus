@@ -12,11 +12,11 @@
 {% endblock %}
 
 {% block content %}
-    <div class = "container-fluid bg-img-1">
-        <h1 class = "text-center text-uppercase my-5 text-primary">{% trans "our menu" %}</h1>
+    <div class = "container-fluid bg-img-1 text-center">
+        <h1 class = "mt-6 font-heading font-30 font-weight-600 text-success text-inline">{% trans "Our menu" %}</h1>
             {% for each_category in categories %}
-            <h2 class = "text-center text-uppercase my-4">{{ each_category.name }}</h2>
-                    <div class = "row border border-primary">
+            <h2 class = "my-4 font-heading text-uppercase">{{ each_category.name }}</h2>
+                    <div class = "row mx-auto border border-primary">
                         {% for each_dish in dishes %}
                             {% if each_dish.category == each_category %}
                                 <div class = "col-12 col-md-6 my-2 px-5">
